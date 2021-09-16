@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+  font-family: 'Press Start 2P', cursive;
+}
+.navbar{
+  background-color: yellow;
+  height: 50px;
+  a{
+    text-decoration:none;
+  }
+  .container{
+  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: centerd;
+    li {
+      text-decoration: none;
+      list-style-type: none;
+      color: blue;
+    }
+  }
+  }
+}
+.title{
+  height: 100vh;
+  .logo{
+    display: flex;
+    justify-content: center;
+  }
+  .homeLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+$typeColours: (
+  "Normal": #A8A77A,
+  "Fire": #EE8130,
+  "Water": #6390F0,
+  "Grass": #7AC74C,
+  "Electric": #F7D02C,
+  "Ice": #96D9D6,
+  "Fighting": #C22E28,
+  "Poison": #A33EA1,
+  "Ground": #E2BF65,
+  "Flying": #A98FF3,
+  "Psychic": #F95587,
+  "Bug": #A6B91A,
+  "Rock":	#B6A136,
+  "Ghost":	#735797,
+  "Dark":	#705746,
+  "Dragon":	#6F35FC,
+  "Steel":	#B7B7CE,
+  "Fairy":	#D685AD
+);
+
+.pokemon-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  
+    div{
+      width: calc(10% - 5px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid black;
+      margin-top: 4px;
+      font-size: 10px;
+      border-radius: 5%;
+      text-align: center;
+      text-decoration: none;
+      a{
+        text-decoration: none;
+      }
+    }
+    @each $type, $colour in $typeColours {
+      .#{$type} {
+        background-color: $colour;
+        
+        box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
+        transition: transform 0.4s;
+        &:hover{
+          
+          background-color: darken($colour, 5%);
+          cursor: pointer;
+          img{
+            transform: scale(2);
+          }
+        }
+      }
+    }
+  
+    img {
+      max-width: 100px;
+      max-height: 100px;
+      
+    }
+  
+
+  
+}
+select{
+  font-family: 'Press Start 2P', cursive;
+}
