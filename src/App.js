@@ -25,14 +25,13 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path='/random'>
+          {/* <Route exact path='/random'>
             <Random Random={Random}/>
-          </Route>
+          </Route> */}
           <Route exact path="/pokemon" >
             <PokemonList PokemonList={PokemonList}/>
           </Route>
