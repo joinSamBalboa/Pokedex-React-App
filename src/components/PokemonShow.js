@@ -31,7 +31,7 @@ const PokemonShow = () => {
     <>
       <div className='pokemon-card-buttons'>
         <button className='btn-refresh'><Link to='/pokemon' className='back-to-list'>Back to all pokemon</Link></button>
-        <button onClick={refreshPage} className='btn-refresh'><Link to="/pokemon/random" className="homeButton" >Who&apos;s that Pokèmon?</Link></button>
+        <button onClick={refreshPage} className='btn-refresh'><Link to="/pokemon/random" className="homeButton">Who&apos;s that Pokèmon?</Link></button>
       </div>
       <hr />
       { pokemons ?

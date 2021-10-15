@@ -8,7 +8,7 @@ const PokemonList = () => {
 
   const [ pokemon, setPokemon ] = useState([])
   const [ filteredPokemon, setFilteredPokemon ] = useState([])
-  const [ filters, setFilters ] = useState({ type: '', searchTerm: '' })
+  const [ filters, setFilters ] = useState({ type: 'All', searchTerm: '' })
   const [ hasError , sethasError ] = useState(false)
   
 
