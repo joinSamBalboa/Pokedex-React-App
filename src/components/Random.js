@@ -10,7 +10,7 @@ const Random = () => {
   useEffect(() => {
     const getRandomPokemon = async () => {
       try {
-        const { data } = await axios('https://app.pokemon-api.xyz/pokemon/random')
+        const { data } = await axios('https://vast-beach-73843.herokuapp.com/pokemon/random')
         setRandomPokemon(data)
       } catch (err) {
         setHasError(true)

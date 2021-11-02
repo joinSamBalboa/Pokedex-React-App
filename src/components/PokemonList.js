@@ -16,7 +16,7 @@ const PokemonList = () => {
   useEffect(() => {
     const getPokemon = async () => {
       try {
-        const { data } = await axios('https://app.pokemon-api.xyz/pokemon/all')
+        const { data } = await axios('https://vast-beach-73843.herokuapp.com/pokemon/all')
         console.log(data)
         setPokemon(data)
       } catch (err){
