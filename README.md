@@ -1,19 +1,19 @@
 <h1 align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1026px-Pok%C3%A9_Ball_icon.svg.png" alt="" width="30" height="30">Welcome to PokéDex React<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1026px-Pok%C3%A9_Ball_icon.svg.png" alt="" width="30" height="30"></h1>
 
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
-</p>
+## Overview
+This was my second project on the Software Engineering Immersive course at General Assembly. It was a hackathon with myself and Wala Zeidan working on it.
+
 
 ## Timeframe
 <p>2 Days</p>
 
 ## Goal
-<p>2 day hack-a-thon to create an app that consumes a public API</p>
+<p>Hack-a-thon to create an app that consumes a public API</p>
 
 
 ## ❓ What is PokéDex React?
 
-<p>PokéDex React is an app that acts as a web based pokedex based on the popular game/show Pokémon. Users of the app are able to view a list of all ~900 pokemon in the pokemon universe as of 2021, where they are able to search pokemon by name andor filter by type. One a pokemon has been found, users can then click to find more information, including japanese mane, sprite, type, weight/height etc.. Within this page, users can also jump to next or previous evolutions if available. Another component, included 'Who's that Pokemon?', which generated a random pokemon from the database.</p>
+<p>PokéDex React is an app that acts as a web based pokedex based on the popular game/show Pokémon. Users of the app are able to view a list of all ~900 pokemon in the pokemon universe as of 2021, where they are able to search pokemon by name and/or filter by type. One a pokemon has been found, users can then click to find more information, including Japanese name, sprite, type, weight/height etc.. Within this page, users can also jump to next or previous evolutions if available. Another component, included 'Who's that Pokemon?', which generated a random pokemon from the database.</p>
 
 
 ## ✨ [Demo](https://pokereactdex.netlify.app/)
@@ -28,15 +28,18 @@
 <li>HTML5</li>
 <li>CSS3</li>
 <li>SASS</li>
-<li>Javascript ES6</li>
+<li>JavaScript ES6</li>
 <li>React</li>
 <li>Insomnia</li>
 <li>Git</li>
-<li>Github</li>
+<li>GitHub</li>
 <li>Chrome dev tools</li>
 
 
 ## 🚀 Approach
+
+This was our first project using React.js and incorporating an API. We spent a majority of the time building this via LiveShare on VScode which helped tremendously. We were able to build the first few components with each other's help ensuring we included elements that helped us both and not to miss any features we were looking to add. We got more comfortable using State Hooks during the project especially with the filter and search functions.
+
 
 <h3>API</h3>
 Our aim was to find an API that was straight forward to consume and that we had an interest in. We initially wanted to use an API with a database of movies but we quickly came across the fact that most good APIs had to be paid for or required authentication, which was outside of our brief. We turned our attention to finding a pokemon API and found one that met our needs. The API itself was also a project that was hosted online and had excellent documentation on how to reach specific query endpoints.
@@ -51,7 +54,7 @@ Using Insomnia, we explored the different endpoints and took notes of the inform
 
 
 <h3>Planning</h3>
-As we only had 2 days to complete this projects, we were strategic with the planning and set ourselves SMART goals so we would be able to complete what was asked of us. We pseudo-coded using VSCode and lay out what information we would be using from the API, the components required, and routes.
+As we only had 2 days to complete this project, we were strategic with the planning and set ourselves SMART goals so we would be able to complete what was asked of us. We pseudo-coded using VSCode and laid out what information we would be using from the API, the components required, and routes. I was tasked with creating the listing page and single pokemon page where my partner worked on the homescreen and random page.
 
 <div align="center">
 <img alt="opening screen" src="./src/assets/Screenshot 2021-11-03 at 11.52.12.png" />
@@ -177,8 +180,9 @@ useEffect(() => {
   }, [filters, pokemon])
 ```
 
-## Difficulties
+## Challenges
 <li>In the data from the API, the previous and next evolutions couldn't be accessed the same way. It didn't make sense at first but we quickly solved this and implemented it in our code to get it working</li>
+```
 
                 <div className="evolutions">
                   <div className="prev"> 
@@ -203,7 +207,7 @@ useEffect(() => {
                       </div>
                     </div>
                     :
-                    <p>No Evolutions</p>
+                    <p>No Evolutions</p>```
 
 <li>Timing was an issue as we didn't have as much time to implement additional ideas/features we had in mind</li>
 <li>One of the issues we had was the the domain we got the API from expired, luckily after the end of the deadline but meant the app essentially no longer worked.</li>
@@ -211,8 +215,15 @@ useEffect(() => {
 
 ## Wins
 <li>We're happy with how it came out especially with the time constraint</li>
-<li>Due to the issue of the API no longer being available, I found a way to fix this. I did this by finding the creator of the APi on Git thankfully allowed self hosting of the API. I forked the repo and deployed this on heroku to then make this the API endpoint.</li>
+<li>Due to the issue of the API no longer being available, I found a way to fix this. I did this by finding the creator of the API on Git thankfully allowed self hosting of the API. I forked the repo and deployed this on heroku to then make this the API endpoint.</li>
 
+## Key Learnings
+<li>Having to work on such a tight deadline helped with prioritising important aspects of our app</li>
+<li>Getting very comfortable with insomnia and retrieving information in JSON format</li>
+<li>Planning was key to getting this done on time due to the time constraints</li>
+
+## Bugs
+<li>No known bugs</li>
 
 ## Author
 
@@ -220,6 +231,7 @@ useEffect(() => {
 
 * Github: [@JoinSamBalboa](https://github.com/JoinSamBalboa)
 * LinkedIn: [@JoinSamBalboa](https://linkedin.com/in/joinsambalboa)
+* Portfolio: [@JoinSamBalboa](https://joinsambalboa.com)
 
 
 
